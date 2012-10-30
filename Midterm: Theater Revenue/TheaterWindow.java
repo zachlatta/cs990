@@ -34,7 +34,7 @@ public class TheaterWindow extends JFrame
 		// Builds the panels
 		buildPanels();
 		
-		// Add the main panel to the frame's content pane
+		// Add the panels to the frame's content pane
 		add(pnlAdultTicketPrice);
 		add(pnlChildTicketPrice);
 		add(pnlAdultTicketsSold);
