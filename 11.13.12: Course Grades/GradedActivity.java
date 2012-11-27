@@ -29,6 +29,8 @@ public class GradedActivity
 	 */
 	public double getPercentage()
 	{
+		DecimalFormat decimalFormat = new DecimalFormat("###.##");
+		
 		/*
 		 * Not sure why I had to break this into multiple statements. It would return 0 if I
 		 * did all of the math in a single statement. Probably some sort of type conversion
@@ -39,7 +41,7 @@ public class GradedActivity
 		percentage /= getMaxScore();
 		percentage *= 100;
 		
-		return percentage;
+		return Double.parseDouble(decimalFormat.format(percentage));
 	}
 
 	public int getScore()
